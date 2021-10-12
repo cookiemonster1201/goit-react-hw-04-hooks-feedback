@@ -1,0 +1,41 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.item {
+  width: 100%;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  max-width: 200px;
+  width: 100%;
+  font-size: 20px;
+  background-color: #fff;
+  border: 2px solid brown;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: background-color 250ms linear, color 250ms linear,
+    box-shadow 250ms linear;
+}
+
+.button:hover,
+.button:focus {
+  background-color: brown;
+  color: white;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: background-color 250ms linear, color 250ms linear,
+    box-shadow 250ms linear;
+}
